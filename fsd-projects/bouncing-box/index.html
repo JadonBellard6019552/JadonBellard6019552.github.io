@@ -84,7 +84,9 @@ positionX = positionX + 10;
    moveBoxTo(positionX);     
        changeBoxText(0); 
        positionX = positionX + speed;
-
+if(positionX > boardWidth){
+  speed = speed*-1
+}
   
         }
 
